@@ -1,19 +1,14 @@
 pipeline {
-  agent {
-    dockerfile {
-      filename 'Dockerfile'
-    }
-
-  }
+  agent any 
   stages {
-    stage('') {
+    stage(‘Build’) {
       steps {
-        sleep 30
+        sh ‘echo “Hello World”’
+        sh ‘“
+                  echo “Multiline shell steps works too”
+                  ls -lah
+               “‘
       }
     }
-
-  }
-  environment {
-    test = 'test'
   }
 }
