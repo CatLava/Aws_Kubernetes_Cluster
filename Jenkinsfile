@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('lint'){
       steps{
-        sh 'tidy -q -e Dockerfile'
+        sh 'make lint'
       }
     }
     stage('Build') {
