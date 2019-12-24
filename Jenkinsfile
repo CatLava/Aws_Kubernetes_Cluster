@@ -1,12 +1,12 @@
 pipeline {
   agent any 
   stages {
-    stage(`lint`){
+    stage('lint'){
       steps{
-        sh `tidy -q -e Dockerfile`
+        sh 'tidy -q -e Dockerfile'
       }
     }
-    stage(‘Build’) {
+    stage('Build') {
       steps {
         sh ‘echo “Hello World”’
         sh ‘“
