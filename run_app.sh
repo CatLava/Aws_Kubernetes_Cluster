@@ -2,4 +2,4 @@
 
 python catalog_database.py
 python pop_items.py
-python application.py
+# python application.py
