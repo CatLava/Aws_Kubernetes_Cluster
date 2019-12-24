@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Build') {
       steps {
-        sh 'sudo docker build -t test .'
+        sh '/bin/bash run_docker.sh'
       }
     }
   }
