@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('lint'){
       steps{
-        sh 'make lint'
+        sh 'tidy -q -e *.html'
       }
     }
     stage('Build') {
